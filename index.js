@@ -21,3 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(video);
   });
 });
+
+window.addEventListener('load', function () {
+  document.body.classList.remove('loading');
+});

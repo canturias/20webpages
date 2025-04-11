@@ -89,7 +89,7 @@ article .pdf.pdf:hover {
   background-color: rgb(255, 80, 80);
 }
 
-article .pdf img {
+article a img {
   width: 24px;
   vertical-align: middle;
   margin: 0 8px;
