@@ -43,6 +43,10 @@ body {
   background-color: rgb(200, 212, 203);
 }
 
+.loading {
+  opacity: 0;
+}
+
 article {
   background-color: rgb(255, 255, 255);
   width: 85%;
