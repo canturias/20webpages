@@ -41,6 +41,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(200, 212, 203);
+  transition: 1s ease;
 }
 
 .loading {
