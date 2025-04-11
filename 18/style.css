@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, rgb(245, 100, 160) 20%,rgb(94, 194, 181)) 80%;
+}
+
+.menu {
+  background: rgb(255, 255, 255);
+  width: 280px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.menu .fas{
+    transition: transform .2s;
+}
+
+.menu p {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.social-lists {
+  background: rgb(255, 255, 255);
+  width: 280px;
+  padding: 20px;
+  list-style-type: none;
+  border-radius: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+.social-lists li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: padding 0.2s linear;
+}
+
+.social-lists li:hover {
+  background: darkgray;
+  border-radius: 32px;
+  padding-left: 10px;
+}
+
+.social-lists li .fab {
+  margin: 0 10px;
+}
+
+.rotate .fas {
+  transform: rotate(180deg);
+}
+
+.hide {
+  visibility: hidden;
+}

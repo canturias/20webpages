@@ -1,0 +1,73 @@
+@font-face {
+  font-family: Minecraftia;
+  src: url(Minecraftia-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(184, 199, 167);
+}
+
+h1 {
+  font-family: Minecraftia;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-family: Minecraftia;
+  margin: 0;
+  font-size: 1.15em;
+}
+
+.slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.3s ease;
+  object-position: center;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  opacity: 1;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.btn.prev {
+  left: 10px;
+}
+
+.btn.next {
+  right: 10px;
+}
+
+.btn:hover {
+  opacity: 1;
+}

@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url("bg.jpg");
+  background-size: cover;
+  text-align: center;
+  transition: filter 0.7s;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  border-radius: 999px;
+}
+
+.btn:hover {
+  filter: brightness(0.8);
+}
+
+.active.container {
+  filter: blur(5px) brightness(0.7);
+}
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 50%;
+  min-width: 240px;
+  max-width: 480px;
+  height: auto;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: url("card.jpg");
+  background-size: cover;
+  border-radius: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: all 0.7s;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 10px 0;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+label {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.popup-btn {
+  background-color: cornflowerblue;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  color: white;
+  border-radius: 999px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-left: 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+  border-radius: 999px;
+}
+
+.input::placeholder {
+  color: lightgray;
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+  transition: 0.15s ease;
+}
+
+.close-icon:hover {
+  color: cornflowerblue;
+}
+
+.active.popup-container {
+  visibility: hidden;
+  opacity: 0;
+  top: 10%;
+}
+
+.x {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5em;
+  
+}

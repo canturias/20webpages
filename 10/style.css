@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  transition: .4s;
+}
+
+.input {
+  visibility: hidden;
+}
+
+.label {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background-color: lightgray;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.circle {
+  width: 34px;
+  background-color: white;
+  height: 34px;
+  border-radius: 50%;
+  top: 3px;
+  position: absolute;
+  left: 3px;
+  animation: toggleOff 0.4s linear forwards;
+}
+
+.input:checked + .label {
+  background-color: rgb(48, 48, 48);
+}
+
+.input:checked + .label .circle {
+  animation: toggleOn 0.4s linear forwards;
+  background-color: rgb(16, 16, 16);
+}
+
+@keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes toggleOff {
+  0% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+section {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 24px;
+  text-align: center;
+  background-color: gray;
+  height: 72px;
+  width: 50%;
+  max-width: 480px;
+  min-width: 240px;
+  display: flex;
+  padding: 24px;
+  flex-direction: row;
+  align-items: center;
+  transition: .4s;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+section div {
+  margin-left: 24px;
+  font-family: Arial;
+  width: 100%;
+  text-align: left;
+}
+
+#author {
+  transition: .4s;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#time {
+  margin-left: 4px;
+  font-size: 0.65em;
+  font-weight: 400;
+}
+
+#message {
+  transition: .4s;
+}
+
+@media (max-width: 480px) {
+  section {
+    height: 48px;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+
+  #author {
+    font-size: 1em;
+    margin-bottom: 4px;
+  }
+
+  #message {
+    font-size: 0.85em;
+  }
+}
